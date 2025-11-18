@@ -1,13 +1,183 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 <head>
   <meta charset="UTF-8" />
-  <title>Kasper Boberg</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kasper Boberg – Portfolio</title>
+  <meta name="description" content="Kasper Boberg – Portfolio inom Business Intelligence, Power BI, SQL, dataanalys och AI-utveckling. Utforska BI-case, datamodellering, dashboards och en AI-driven CV-fotogenerator byggd med Gemini." />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root {
+      --bg: #f7f7f7;
+      --text: #222;
+      --muted: #555;
+      --accent: #3366ff;
+      --card-bg: #ffffff;
+      --radius: 14px;
+      --shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    header p {
+      max-width: 650px;
+      margin: 0 auto;
+      font-size: 1.15rem;
+      color: var(--muted);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .projects {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      margin-top: 30px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 30px;
+      box-shadow: var(--shadow);
+      border: 1px solid #eaeaea;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--muted);
+    }
+
+    .card ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .link-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 16px;
+      background: var(--accent);
+      color: white;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s ease;
+    }
+
+    .link-btn:hover {
+      background: #2554d6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome</h1>
-  <p>This is my personal site hosted on GitHub Pages.</p>
-  <p>You can find my GitHub profile here:</p>
-  <a href="https://github.com/KasperBoberg">github.com/KasperBoberg</a>
+
+<header>
+  <h1>Kasper Boberg</h1>
+  <p>Business Intelligence • Power BI • SQL • Dataanalys • AI-applikationer  
+  <br>Portfolio över BI-case, datamodellering, dashboards och AI-driven bildgenerering.</p>
+</header>
+
+<div class="container">
+
+  <section class="projects">
+
+    <!-- Projekt 1 -->
+    <article class="card">
+      <h2><i class="fa-solid fa-chart-column"></i> Streaming & Earnings Dashboard (Power BI)</h2>
+      <p>
+        Ett komplett BI-case där streamingdata analyseras för att förstå variationer i eCPM mellan plattformar och territorier.
+        Lösningen använder Power BI, SQL, stjärnmodeller och datatransformationer för att skapa en tydlig och informativ rapport.
+      </p>
+
+      <ul>
+        <li>Datakälla: Streamingdata från DistroKid</li>
+        <li>Bearbetning: PostgreSQL & Power Query</li>
+        <li>Modellering: Stjärnschema</li>
+        <li>Resultat: Intäkter, eCPM, plattformsvy, territorievy, R12-trender</li>
+      </ul>
+
+      <a class="link-btn" href="https://github.com/KasperBoberg/Streaming-Earnings-Dashboard" target="_blank" rel="noopener noreferrer">
+        Visa projekt
+      </a>
+    </article>
+
+    <!-- Projekt 2 -->
+    <article class="card">
+      <h2><i class="fa-solid fa-user"></i> AI CV-Fotogenerator</h2>
+      <p>
+        En avancerad webbapp som genererar professionella CV-porträtt av vanliga foton med hjälp av
+        Google Gemini 2.5 Flash Image. Inkluderar AI-styrd bildredigering, stylingval, beskärningsverktyg
+        och full efterbearbetning med canvasfilter.
+      </p>
+
+      <ul>
+        <li>Gemini API – multimodal bildgenerering</li>
+        <li>Outfitmatching via text eller referensbild</li>
+        <li>Bakgrunds- & belysningsval</li>
+        <li>Beskärning & filter direkt i browsern</li>
+        <li>Byggt med HTML, CSS, TypeScript, Vite & Cropper.js</li>
+      </ul>
+
+      <a class="link-btn" href="https://github.com/KasperBoberg/AI-CV-Photo-Generator" target="_blank" rel="noopener noreferrer">
+        Visa projekt
+      </a>
+    </article>
+
+  </section>
+
+</div>
+
+<footer>
+  <p>Kontakt: <a href="mailto:kasperboberg95@gmail.com">kasperboberg95@gmail.com</a></p>
+  <p><a href="https://github.com/KasperBoberg" target="_blank" rel="noopener noreferrer">GitHub Profil</a></p>
+</footer>
+
 </body>
 </html>
